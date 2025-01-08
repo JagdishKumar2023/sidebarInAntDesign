@@ -1,0 +1,7 @@
+.sidebar {
+  height: 100vh; /* Full viewport height */
+  position: fixed; /* Keep the sidebar fixed */
+  top: 0;
+  left: 0;
+  overflow: auto; /* Allow scrolling if content overflows */
+}
