@@ -4,7 +4,7 @@ import {
   AppstoreOutlined,
   AreaChartOutlined,
   PayCircleOutlined,
-  BarsOutlined,
+  PieChartOutlined, 
   SettingOutlined,
 } from "@ant-design/icons";
 
@@ -17,34 +17,23 @@ const MenuList = ({ darkTheme }) => {
       className="menu-bar"
     >
       <Menu.Item key="home" icon={<HomeOutlined />}>
-        Home
+        Dashboard
       </Menu.Item>
 
       <Menu.Item key="activity" icon={<AppstoreOutlined />}>
-        Activity
+        User Management
       </Menu.Item>
-
-      <Menu.SubMenu key="tasks" icon={<BarsOutlined />} title="Tasks">
-        <Menu.Item key="task-1">Task1</Menu.Item>
-
-        <Menu.Item key="task-2">Task2</Menu.Item>
-
-        <Menu.SubMenu key="subtasks" title="Subtasks">
-          <Menu.Item key="subtask-1">Subtask 1</Menu.Item>
-          <Menu.Item key="subtask-2">Subtask 2</Menu.Item>
-        </Menu.SubMenu>
-      </Menu.SubMenu>
-
+      <Menu.Item key="subtask-1" icon={<PieChartOutlined/>}>Winning Management</Menu.Item>
       <Menu.Item key="progress" icon={<AreaChartOutlined />}>
-        Progress
+        Recharge Request
       </Menu.Item>
 
       <Menu.Item key="payment" icon={<PayCircleOutlined />}>
-        Payment
+        Withdrawals Request
       </Menu.Item>
 
       <Menu.Item key="setting" icon={<SettingOutlined />}>
-        Setting
+        Trade History
       </Menu.Item>
     </Menu>
   );
